@@ -1,0 +1,228 @@
+\hypertarget{main_8cpp}{}\doxysection{C\+:/\+Users/\+Rushi/\+Desktop/\+Assignment\+\_\+3/\+P2/code/main.cpp File Reference}
+\label{main_8cpp}\index{C:/Users/Rushi/Desktop/Assignment\_3/P2/code/main.cpp@{C:/Users/Rushi/Desktop/Assignment\_3/P2/code/main.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_que_node}{Que\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a7cf73e85e61c143173cc765beae8ee4b}{store}} (int i2, int j2, int k2)
+\item 
+void \mbox{\hyperlink{main_8cpp_a55c3cc33aa878501ddb38eda82bbcbe8}{insert}} (int d)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae14368f69c4359050a5d88cab50a5cdf}{Xorfunc}} (struct \mbox{\hyperlink{struct_node}{Node}} $\ast$head, struct \mbox{\hyperlink{struct_node}{Node}} $\ast$rear)
+\item 
+int \mbox{\hyperlink{main_8cpp_ad079eaa5d70a919fa497e5e3ab7c8dad}{count}} (struct \mbox{\hyperlink{struct_node}{Node}} $\ast$head, struct \mbox{\hyperlink{struct_node}{Node}} $\ast$rear, int i, int k)
+\item 
+int \mbox{\hyperlink{main_8cpp_a01dea55abcc3972c791244c0ee03cb8b}{count\+Triplets}} (struct \mbox{\hyperlink{struct_node}{Node}} $\ast$hd, struct \mbox{\hyperlink{struct_node}{Node}} $\ast$lst)
+\item 
+void \mbox{\hyperlink{main_8cpp_a4b05ced400ef492052a1d50e2755d71a}{show\+Triplets}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_que_node}{Que\+Node}} $\ast$ \mbox{\hyperlink{main_8cpp_ac98657983f5f9710235d99c98ef56087}{Que\+First}} = N\+U\+LL
+\item 
+struct \mbox{\hyperlink{struct_que_node}{Que\+Node}} $\ast$ \mbox{\hyperlink{main_8cpp_af9a79b1b8e625db223ddfd617894af22}{Que\+Last}} =N\+U\+LL
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{main_8cpp_ad4f551b04c42cff59f7823e0ec1bc90e}{first}} = N\+U\+LL
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{main_8cpp_ad55f91e3773370b790704d512696ad6d}{last}} =N\+U\+LL
+\item 
+int \mbox{\hyperlink{main_8cpp_a9f59b34b1f25fe00023291b678246bcc}{length}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ad079eaa5d70a919fa497e5e3ab7c8dad}\label{main_8cpp_ad079eaa5d70a919fa497e5e3ab7c8dad}} 
+\index{main.cpp@{main.cpp}!count@{count}}
+\index{count@{count}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int count (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{head,  }\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{rear,  }\item[{int}]{i,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+This method counts the number of j. \begin{DoxyAuthor}{Author}
+Rushiprasad 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Node$\ast$} & head start point \\
+\hline
+{\em Node$\ast$} & rear end point \\
+\hline
+{\em i} & changing start point \\
+\hline
+{\em j} & changing end point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+21/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 113 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a01dea55abcc3972c791244c0ee03cb8b}\label{main_8cpp_a01dea55abcc3972c791244c0ee03cb8b}} 
+\index{main.cpp@{main.cpp}!countTriplets@{countTriplets}}
+\index{countTriplets@{countTriplets}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{countTriplets()}{countTriplets()}}
+{\footnotesize\ttfamily int count\+Triplets (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{hd,  }\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+This method counts the number of triplets. \begin{DoxyAuthor}{Author}
+Rushiprasad 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Node$\ast$} & hd start point \\
+\hline
+{\em Node$\ast$} & lst end point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+21/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 137 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a55c3cc33aa878501ddb38eda82bbcbe8}\label{main_8cpp_a55c3cc33aa878501ddb38eda82bbcbe8}} 
+\index{main.cpp@{main.cpp}!insert@{insert}}
+\index{insert@{insert}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void insert (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})}
+
+This method will insert an element to linked list. \begin{DoxyAuthor}{Author}
+Rushiprasad 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & key value to be inserted in linked list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+21/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 69 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 173 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a4b05ced400ef492052a1d50e2755d71a}\label{main_8cpp_a4b05ced400ef492052a1d50e2755d71a}} 
+\index{main.cpp@{main.cpp}!showTriplets@{showTriplets}}
+\index{showTriplets@{showTriplets}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{showTriplets()}{showTriplets()}}
+{\footnotesize\ttfamily void show\+Triplets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method prints the triplets. \begin{DoxyAuthor}{Author}
+Rushiprasad 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 165 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a7cf73e85e61c143173cc765beae8ee4b}\label{main_8cpp_a7cf73e85e61c143173cc765beae8ee4b}} 
+\index{main.cpp@{main.cpp}!store@{store}}
+\index{store@{store}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily void store (\begin{DoxyParamCaption}\item[{int}]{i2,  }\item[{int}]{j2,  }\item[{int}]{k2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae14368f69c4359050a5d88cab50a5cdf}\label{main_8cpp_ae14368f69c4359050a5d88cab50a5cdf}} 
+\index{main.cpp@{main.cpp}!Xorfunc@{Xorfunc}}
+\index{Xorfunc@{Xorfunc}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Xorfunc()}{Xorfunc()}}
+{\footnotesize\ttfamily int Xorfunc (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{head,  }\item[{struct \mbox{\hyperlink{struct_node}{Node}} $\ast$}]{rear }\end{DoxyParamCaption})}
+
+This method xors the numbers between a range given. \begin{DoxyAuthor}{Author}
+Rushiprasad 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Node$\ast$} & head start point \\
+\hline
+{\em Node$\ast$} & rear end point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+21/08/2019 
+\end{DoxyDate}
+
+
+Definition at line 94 of file main.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_ad4f551b04c42cff59f7823e0ec1bc90e}\label{main_8cpp_ad4f551b04c42cff59f7823e0ec1bc90e}} 
+\index{main.cpp@{main.cpp}!first@{first}}
+\index{first@{first}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{first}{first}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_node}{Node}}$\ast$ first = N\+U\+LL}
+
+
+
+Definition at line 59 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ad55f91e3773370b790704d512696ad6d}\label{main_8cpp_ad55f91e3773370b790704d512696ad6d}} 
+\index{main.cpp@{main.cpp}!last@{last}}
+\index{last@{last}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{last}{last}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_node}{Node}} $\ast$ last =N\+U\+LL}
+
+
+
+Definition at line 59 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a9f59b34b1f25fe00023291b678246bcc}\label{main_8cpp_a9f59b34b1f25fe00023291b678246bcc}} 
+\index{main.cpp@{main.cpp}!length@{length}}
+\index{length@{length}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily int length =0}
+
+
+
+Definition at line 60 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ac98657983f5f9710235d99c98ef56087}\label{main_8cpp_ac98657983f5f9710235d99c98ef56087}} 
+\index{main.cpp@{main.cpp}!QueFirst@{QueFirst}}
+\index{QueFirst@{QueFirst}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{QueFirst}{QueFirst}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_que_node}{Que\+Node}}$\ast$ Que\+First = N\+U\+LL}
+
+
+
+Definition at line 36 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_af9a79b1b8e625db223ddfd617894af22}\label{main_8cpp_af9a79b1b8e625db223ddfd617894af22}} 
+\index{main.cpp@{main.cpp}!QueLast@{QueLast}}
+\index{QueLast@{QueLast}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{QueLast}{QueLast}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_que_node}{Que\+Node}} $\ast$ Que\+Last =N\+U\+LL}
+
+
+
+Definition at line 36 of file main.\+cpp.
+
