@@ -1,0 +1,184 @@
+\hypertarget{tut6__q3_8cpp}{}\section{Code/tut6\+\_\+q3.cpp File Reference}
+\label{tut6__q3_8cpp}\index{Code/tut6\+\_\+q3.\+cpp@{Code/tut6\+\_\+q3.\+cpp}}
+
+
+this program implements Bentley-\/\+Ottmann Algorithm to find all intersection of n given lines and also find linear fit.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for tut6\+\_\+q3.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{tut6__q3_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_point}{Point}
+\begin{DoxyCompactList}\small\item\em this is the struct of \hyperlink{struct_point}{Point} which represent any point. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_line}{Line}
+\begin{DoxyCompactList}\small\item\em this is struct which represent any line segment. \end{DoxyCompactList}\item 
+class \hyperlink{classevent__less}{event\+\_\+less}
+\begin{DoxyCompactList}\small\item\em this is event-\/less class which contain operator function which define some operation on the line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+pair$<$ bool, \hyperlink{struct_point}{Point} $>$ \hyperlink{tut6__q3_8cpp_a9ba35f40883641283fb96b6ad2b384ee}{intersect} (const \hyperlink{struct_line}{Line} \&a, const \hyperlink{struct_line}{Line} \&b, bool print)
+\begin{DoxyCompactList}\small\item\em this function make some possible pair. \end{DoxyCompactList}\item 
+void \hyperlink{tut6__q3_8cpp_a6aa32d408e7d87f7c058294626b6b9b0}{intersect} (int a, int b, const \hyperlink{struct_point}{Point} \&I, vector$<$ \hyperlink{struct_line}{Line} $>$ \&lines, multimap$<$ \hyperlink{struct_point}{Point}, int $>$ \&sweep, multimap$<$ pair$<$ double, int $>$, int, \hyperlink{classevent__less}{event\+\_\+less} $>$ \&events, bool print)
+\item 
+void \hyperlink{tut6__q3_8cpp_a2d57adc002542eee576c8c1442871b4d}{intersect} (vector$<$ \hyperlink{struct_line}{Line} $>$ \&lines, vector$<$ \hyperlink{struct_point}{Point} $>$ \&intersections, bool print)
+\begin{DoxyCompactList}\small\item\em this function find all possible intersection of the n given lines. \end{DoxyCompactList}\item 
+void \hyperlink{tut6__q3_8cpp_afeefc4b0befb61aa570a24d552271099}{linearfitline} (double x\mbox{[}$\,$\mbox{]}, double y\mbox{[}$\,$\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em this fucntion find linearfit of M found intersection points using least square method. \end{DoxyCompactList}\item 
+int \hyperlink{tut6__q3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em this is the main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{tut6__q3_8cpp_adc735e446799084e3d27da58cf5807c3}{seg\+\_\+start} =0
+\item 
+int \hyperlink{tut6__q3_8cpp_a4311f4976e51399caed297d2cad3bfd3}{seg\+\_\+end} =1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+this program implements Bentley-\/\+Ottmann Algorithm to find all intersection of n given lines and also find linear fit. 
+
+\begin{DoxyAuthor}{Author}
+Rushiprasad 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/10-\/08 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{tut6__q3_8cpp_a9ba35f40883641283fb96b6ad2b384ee}\label{tut6__q3_8cpp_a9ba35f40883641283fb96b6ad2b384ee}} 
+\index{tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}!intersect@{intersect}}
+\index{intersect@{intersect}!tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily pair$<$bool, \hyperlink{struct_point}{Point}$>$ intersect (\begin{DoxyParamCaption}\item[{const \hyperlink{struct_line}{Line} \&}]{a,  }\item[{const \hyperlink{struct_line}{Line} \&}]{b,  }\item[{bool}]{print }\end{DoxyParamCaption})}
+
+
+
+this function make some possible pair. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em b} & \\
+\hline
+{\em print} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pair$<$bool, Point$>$ 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file tut6\+\_\+q3.\+cpp.
+
+\mbox{\Hypertarget{tut6__q3_8cpp_a6aa32d408e7d87f7c058294626b6b9b0}\label{tut6__q3_8cpp_a6aa32d408e7d87f7c058294626b6b9b0}} 
+\index{tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}!intersect@{intersect}}
+\index{intersect@{intersect}!tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void intersect (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b,  }\item[{const \hyperlink{struct_point}{Point} \&}]{I,  }\item[{vector$<$ \hyperlink{struct_line}{Line} $>$ \&}]{lines,  }\item[{multimap$<$ \hyperlink{struct_point}{Point}, int $>$ \&}]{sweep,  }\item[{multimap$<$ pair$<$ double, int $>$, int, \hyperlink{classevent__less}{event\+\_\+less} $>$ \&}]{events,  }\item[{bool}]{print }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file tut6\+\_\+q3.\+cpp.
+
+\mbox{\Hypertarget{tut6__q3_8cpp_a2d57adc002542eee576c8c1442871b4d}\label{tut6__q3_8cpp_a2d57adc002542eee576c8c1442871b4d}} 
+\index{tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}!intersect@{intersect}}
+\index{intersect@{intersect}!tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void intersect (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{struct_line}{Line} $>$ \&}]{lines,  }\item[{vector$<$ \hyperlink{struct_point}{Point} $>$ \&}]{intersections,  }\item[{bool}]{print }\end{DoxyParamCaption})}
+
+
+
+this function find all possible intersection of the n given lines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lines} & \\
+\hline
+{\em intersections} & \\
+\hline
+{\em print} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 164 of file tut6\+\_\+q3.\+cpp.
+
+\mbox{\Hypertarget{tut6__q3_8cpp_afeefc4b0befb61aa570a24d552271099}\label{tut6__q3_8cpp_afeefc4b0befb61aa570a24d552271099}} 
+\index{tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}!linearfitline@{linearfitline}}
+\index{linearfitline@{linearfitline}!tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}}
+\subsubsection{\texorpdfstring{linearfitline()}{linearfitline()}}
+{\footnotesize\ttfamily void linearfitline (\begin{DoxyParamCaption}\item[{double}]{x\mbox{[}$\,$\mbox{]},  }\item[{double}]{y\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+this fucntion find linearfit of M found intersection points using least square method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 293 of file tut6\+\_\+q3.\+cpp.
+
+\mbox{\Hypertarget{tut6__q3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{tut6__q3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}!main@{main}}
+\index{main@{main}!tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this is the main function. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 314 of file tut6\+\_\+q3.\+cpp.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{tut6__q3_8cpp_a4311f4976e51399caed297d2cad3bfd3}\label{tut6__q3_8cpp_a4311f4976e51399caed297d2cad3bfd3}} 
+\index{tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}!seg\+\_\+end@{seg\+\_\+end}}
+\index{seg\+\_\+end@{seg\+\_\+end}!tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}}
+\subsubsection{\texorpdfstring{seg\+\_\+end}{seg\_end}}
+{\footnotesize\ttfamily int seg\+\_\+end =1}
+
+
+
+Definition at line 13 of file tut6\+\_\+q3.\+cpp.
+
+\mbox{\Hypertarget{tut6__q3_8cpp_adc735e446799084e3d27da58cf5807c3}\label{tut6__q3_8cpp_adc735e446799084e3d27da58cf5807c3}} 
+\index{tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}!seg\+\_\+start@{seg\+\_\+start}}
+\index{seg\+\_\+start@{seg\+\_\+start}!tut6\+\_\+q3.\+cpp@{tut6\+\_\+q3.\+cpp}}
+\subsubsection{\texorpdfstring{seg\+\_\+start}{seg\_start}}
+{\footnotesize\ttfamily int seg\+\_\+start =0}
+
+
+
+Definition at line 13 of file tut6\+\_\+q3.\+cpp.
+

@@ -190,12 +190,12 @@ int main()
 	}
 
 
-    cout << "Edges of MST are \n"; 
+    // cout << "Edges of MST are \n"; 
 	outdata<<"graph{"<<endl;
 	int mst_wt = g.kruskalMST(); 
 	outdata<<"}";
 
-	cout << "\nWeight of MST is " << mst_wt<<endl; 
+	// cout << "\nWeight of MST is " << mst_wt<<endl; 
 
 	return 0; 
 } 

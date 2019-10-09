@@ -1,0 +1,146 @@
+\hypertarget{main_8cpp}{}\section{Code/main.cpp File Reference}
+\label{main_8cpp}\index{Code/main.\+cpp@{Code/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structadjls}{adjls}
+\begin{DoxyCompactList}\small\item\em structure to represent each node in adjacency list \end{DoxyCompactList}\item 
+struct \hyperlink{structadjl}{adjl}
+\begin{DoxyCompactList}\small\item\em structure to represent a list in adjacency list \end{DoxyCompactList}\item 
+struct \hyperlink{struct_graph}{Graph}
+\begin{DoxyCompactList}\small\item\em structure to represent the graph \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_graph}{Graph} $\ast$ \hyperlink{main_8cpp_a703199018feacc2cb1ea1dad98bbac11}{makegraph} (int V)
+\begin{DoxyCompactList}\small\item\em making graph \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a43106306f1e8389fb85ca4b38281c350}{inser} (\hyperlink{struct_graph}{Graph} $\ast$graph, int st, int en)
+\begin{DoxyCompactList}\small\item\em inserting edges in the graph \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a73f6853882ea0eeb578f3d693640ad76}{bfs} (\hyperlink{struct_graph}{Graph} $\ast$graph, \hyperlink{structadjl}{adjl} $\ast$arr)
+\begin{DoxyCompactList}\small\item\em B\+FS for a graph. \end{DoxyCompactList}\item 
+\hyperlink{structadjl}{adjl} $\ast$ \hyperlink{main_8cpp_a38ba00724b2c96fdd8b7bc7d4c7fbe49}{dfs} (\hyperlink{struct_graph}{Graph} $\ast$graph, \hyperlink{structadjl}{adjl} $\ast$arr, \hyperlink{structadjls}{adjls} $\ast$v)
+\begin{DoxyCompactList}\small\item\em D\+FS for a graph. \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{main_8cpp_ae6eaec15d3947f8fefd7f171a36d05bf}{diame} (\hyperlink{struct_graph}{Graph} $\ast$graph, \hyperlink{structadjl}{adjl} $\ast$arr, \hyperlink{structadjls}{adjls} $\ast$p, int $\ast$a)
+\begin{DoxyCompactList}\small\item\em taking out diameter of the graph \end{DoxyCompactList}\item 
+\hyperlink{structadjl}{adjl} $\ast$ \hyperlink{main_8cpp_add894188f9a3e0b44965d0e313a1ea7c}{findcycle} (\hyperlink{struct_graph}{Graph} $\ast$graph, \hyperlink{structadjl}{adjl} $\ast$arr, \hyperlink{structadjls}{adjls} $\ast$v)
+\begin{DoxyCompactList}\small\item\em finding if there is a cycle in the graph \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\begin{DoxyCompactList}\small\item\em main method to initialize and call other methods \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a73f6853882ea0eeb578f3d693640ad76}\label{main_8cpp_a73f6853882ea0eeb578f3d693640ad76}} 
+\index{main.\+cpp@{main.\+cpp}!bfs@{bfs}}
+\index{bfs@{bfs}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily void bfs (\begin{DoxyParamCaption}\item[{\hyperlink{struct_graph}{Graph} $\ast$}]{graph,  }\item[{\hyperlink{structadjl}{adjl} $\ast$}]{arr }\end{DoxyParamCaption})}
+
+
+
+B\+FS for a graph. 
+
+
+
+Definition at line 83 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a38ba00724b2c96fdd8b7bc7d4c7fbe49}\label{main_8cpp_a38ba00724b2c96fdd8b7bc7d4c7fbe49}} 
+\index{main.\+cpp@{main.\+cpp}!dfs@{dfs}}
+\index{dfs@{dfs}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{dfs()}{dfs()}}
+{\footnotesize\ttfamily \hyperlink{structadjl}{adjl}$\ast$ dfs (\begin{DoxyParamCaption}\item[{\hyperlink{struct_graph}{Graph} $\ast$}]{graph,  }\item[{\hyperlink{structadjl}{adjl} $\ast$}]{arr,  }\item[{\hyperlink{structadjls}{adjls} $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+D\+FS for a graph. 
+
+
+
+Definition at line 119 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae6eaec15d3947f8fefd7f171a36d05bf}\label{main_8cpp_ae6eaec15d3947f8fefd7f171a36d05bf}} 
+\index{main.\+cpp@{main.\+cpp}!diame@{diame}}
+\index{diame@{diame}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{diame()}{diame()}}
+{\footnotesize\ttfamily int$\ast$ diame (\begin{DoxyParamCaption}\item[{\hyperlink{struct_graph}{Graph} $\ast$}]{graph,  }\item[{\hyperlink{structadjl}{adjl} $\ast$}]{arr,  }\item[{\hyperlink{structadjls}{adjls} $\ast$}]{p,  }\item[{int $\ast$}]{a }\end{DoxyParamCaption})}
+
+
+
+taking out diameter of the graph 
+
+
+
+Definition at line 138 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_add894188f9a3e0b44965d0e313a1ea7c}\label{main_8cpp_add894188f9a3e0b44965d0e313a1ea7c}} 
+\index{main.\+cpp@{main.\+cpp}!findcycle@{findcycle}}
+\index{findcycle@{findcycle}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{findcycle()}{findcycle()}}
+{\footnotesize\ttfamily \hyperlink{structadjl}{adjl}$\ast$ findcycle (\begin{DoxyParamCaption}\item[{\hyperlink{struct_graph}{Graph} $\ast$}]{graph,  }\item[{\hyperlink{structadjl}{adjl} $\ast$}]{arr,  }\item[{\hyperlink{structadjls}{adjls} $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+finding if there is a cycle in the graph 
+
+
+
+Definition at line 155 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a43106306f1e8389fb85ca4b38281c350}\label{main_8cpp_a43106306f1e8389fb85ca4b38281c350}} 
+\index{main.\+cpp@{main.\+cpp}!inser@{inser}}
+\index{inser@{inser}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{inser()}{inser()}}
+{\footnotesize\ttfamily void inser (\begin{DoxyParamCaption}\item[{\hyperlink{struct_graph}{Graph} $\ast$}]{graph,  }\item[{int}]{st,  }\item[{int}]{en }\end{DoxyParamCaption})}
+
+
+
+inserting edges in the graph 
+
+
+
+Definition at line 43 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+main method to initialize and call other methods 
+
+
+
+Definition at line 177 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a703199018feacc2cb1ea1dad98bbac11}\label{main_8cpp_a703199018feacc2cb1ea1dad98bbac11}} 
+\index{main.\+cpp@{main.\+cpp}!makegraph@{makegraph}}
+\index{makegraph@{makegraph}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{makegraph()}{makegraph()}}
+{\footnotesize\ttfamily \hyperlink{struct_graph}{Graph}$\ast$ makegraph (\begin{DoxyParamCaption}\item[{int}]{V }\end{DoxyParamCaption})}
+
+
+
+making graph 
+
+
+
+Definition at line 31 of file main.\+cpp.
+
