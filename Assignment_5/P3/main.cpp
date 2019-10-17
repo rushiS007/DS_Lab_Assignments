@@ -139,7 +139,6 @@ int main()
         verArray[b][a] = arr[k+2]-'0';
     }
 
-    cout << "Hello world!" << endl;
     /*for(int k=0;k<vertices;k++){
         for(int l=0;l<vertices;l++)
             //cout<<verArray[k][l]<<"  ";
